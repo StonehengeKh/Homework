@@ -1,0 +1,196 @@
+.time {
+    color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #939393;
+    padding: 10px 40px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_nav {
+    list-style-type: none;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+.img_logo_h {
+    width: 100%;
+    max-width: 188px;
+}
+
+.img_logo_f {
+    width: 100%;
+    max-width: 95px;
+    margin: 27px 0;
+}
+
+h3 {
+    color: #cf1a68;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 50px 0;
+}
+
+.block_row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.image_row {
+    margin: 15px 25px 45px -10px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.list:nth-child(2n) {
+    flex-direction: row-reverse;
+    margin-right: -5px;
+    margin-left: 25px;
+}
+
+.list:nth-child(2n) p{
+    margin-left: -30px;
+}
+
+.list:nth-child(2n) .image_row{
+    margin: 15px 0 45px 10px;
+}
+
+.image {
+    width: 100%;
+    max-width: 187px;
+}
+
+.block_column {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto 0;
+}
+
+.card {
+    border: 3px solid #939393;
+    width: 383px;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 25px;
+    position: relative;
+    transition: transform 1s ease 0s;
+}
+
+span {
+    display: none;
+    position: absolute;
+    top: 45%;
+    width: 90%;
+    font-size: 44px;
+}
+
+.image_block {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.card:hover a{
+    opacity: 0.4;
+}
+
+.card:hover span {
+    display: block;
+    transform: rotate(360deg);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #939393;
+}
+
+@media (max-width: 1024px) {
+    header, footer {
+        background-color: aqua;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .list_nav {
+        width: 100%;
+        text-align: center;
+    }
+}

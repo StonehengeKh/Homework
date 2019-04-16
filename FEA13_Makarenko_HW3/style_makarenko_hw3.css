@@ -1,0 +1,161 @@
+.time {
+    color: red;
+}
+
+sub {
+    color: blue;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+.function:before {
+    content: "f";
+    display: inline;
+    color: blue;
+    font-style: italic;
+}
+
+.img1 {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.img2 {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.cards_block {
+    background-color: #0d5825;
+    position: relative;
+    width: 750px;
+    height: 500px;
+    padding-top: 20px;
+}
+
+.cards_block blockquote, .cards_block p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.cards_block p {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.card {
+    position: absolute;
+    width: 150px;
+    top: 200px;
+    left: 300px;
+    transform-origin: 0 300px 0;
+    transition: top 1s ease 0s;
+}
+
+.card1 {
+    transform: rotate(10deg);
+}
+
+.card2 {
+    transform: rotate(-5deg);
+}
+
+.card3 {
+    transform: rotate(-20deg);
+}
+
+.card:hover {
+    top: 160px;
+}
+
+.info_block {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    padding: 20px;
+}
+
+.soc img {
+    width: 50px;
+}
+
+.soc {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0 grey;
+}
+
+.facebook{
+    overflow: hidden;
+}
+
+.instagram{
+    overflow: visible;
+}
+
+.telegram{
+    overflow: scroll;
+}
+
+.viber{
+    overflow: auto;
+}
+
+.info {
+    display: none;
+}
+
+.soc:hover {
+    width: 250px;
+    height: 250px;
+    z-index: 100;
+}
+
+.soc:hover .info{
+    display: inline;
+}
+
+.soc:hover img{
+    display: none;
+}
+
+.facebook {
+    top: 20px;
+    left: 20px;
+}
+
+.instagram {
+    top: 80px;
+    left: 80px;
+}
+
+.telegram {
+    top: 140px;
+    left: 140px;
+}
+
+.viber {
+    top: 200px;
+    left: 200px;
+}
+
+.girl_block {
+    position: relative;
+}
+
+.row {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+    z-index: 99999;
+}
+

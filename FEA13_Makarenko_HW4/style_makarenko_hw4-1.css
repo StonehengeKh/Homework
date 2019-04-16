@@ -1,0 +1,45 @@
+.time {
+    color: red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: yellow;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.left_block {
+    order: 1;
+    background-color: cadetblue;
+    width: 200px;
+    text-align: center;
+}
+
+.right_block {
+    order: 3;
+    background-color: blueviolet;
+    width: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+}

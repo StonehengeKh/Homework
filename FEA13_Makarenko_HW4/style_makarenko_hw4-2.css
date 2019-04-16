@@ -1,0 +1,65 @@
+.time {
+    color: red;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+section {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+.left_block {
+    order: 1;
+    background-color: cadetblue;
+    width: 200px;
+    text-align: center;
+}
+
+.right_block {
+    order: 3;
+    background-color: blueviolet;
+    width: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+}
+

@@ -1,0 +1,90 @@
+h1 {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: black;
+    font-size: 14px;
+}
+
+li:first-child a{
+    color: green;
+}
+
+li:nth-child(even) a{
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: red;
+    font-size: 55px;
+}
+
+li:nth-child(3n+1) {
+    background-color: yellow;
+}
+
+li:before {
+    content: "\2013";
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    border: 10px solid black;
+    margin: 10px;
+    padding: 20px;
+}
+
+.circle {
+    border: 10px solid black;
+    border-radius: 50%;
+}
+
+.box:hover, .box:hover > .circle{
+    border-color: blue;
+    background-color: yellow;
+}
+
+.psevdo {
+    display: inline-block;
+    width: 380px;
+    height: 70px;
+    border: blue solid 5px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjio3hZ8kkwKn7FBB6IJh7ha65UgVkZDiYTg9GbSjygMJhYbK-ZA");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    padding-top: 160px;
+    padding-left: 10px;
+}
+
+.psevdo:before {
+    content:attr(href);
+}
+
+.bg-box {
+    width: 600px;
+    height: 300px;
+    background-color: #2a700a;
+    background-image:
+            url("./img/green-png-44873.png"),
+            url("./img/lamp-png-34914.png"),
+            url("https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png"),
+            url("https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru"),
+            url("https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg");
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
+    background-position: bottom, top, right, left, center;
+    background-size: 27% auto, 4% auto, 3% auto, 3% auto, 50% auto;
+}
